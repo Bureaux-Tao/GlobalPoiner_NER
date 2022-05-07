@@ -1,0 +1,598 @@
+ssh://bureaux@180.169.131.147:22/home/bureaux/miniconda3/envs/Keras-base/bin/python -u /home/bureaux/.pycharm_helpers/pydev/pydevconsole.py --mode=server
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['/home/bureaux/Projects/globalpointer_ner', '/home/bureaux/Projects/globalpointer_ner'])
+Python 3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.16.1 -- An enhanced Interactive Python. Type '?' for help.
+runfile('/home/bureaux/Projects/globalpointer_ner/train.py', wdir='/home/bureaux/Projects/globalpointer_ner')
+PyDev console: using IPython 7.16.1
+Python 3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59)
+[GCC 7.5.0] on linux
+Using TensorFlow backend.
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:4185: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:131: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:133: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:2974: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to
+==================================================================================================
+Input-Token (InputLayer)        (None, None)         0
+__________________________________________________________________________________________________
+Input-Segment (InputLayer)      (None, None)         0
+__________________________________________________________________________________________________
+Embedding-Token (Embedding)     (None, None, 768)    9216000     Input-Token[0][0]
+__________________________________________________________________________________________________
+Embedding-Segment (Embedding)   (None, None, 768)    1536        Input-Segment[0][0]
+__________________________________________________________________________________________________
+Embedding-Token-Segment (Add)   (None, None, 768)    0           Embedding-Token[0][0]
+                                                                 Embedding-Segment[0][0]
+__________________________________________________________________________________________________
+Embedding-Dropout (Dropout)     (None, None, 768)    0           Embedding-Token-Segment[0][0]
+__________________________________________________________________________________________________
+Embedding-Norm (LayerNormalizat (None, None, 768)    0           Embedding-Dropout[0][0]
+__________________________________________________________________________________________________
+Embedding-Rotary-Position (Sinu (None, None, 64)     0           Embedding-Norm[0][0]
+__________________________________________________________________________________________________
+Transformer-0-MultiHeadSelfAtte (None, None, 768)    2359296     Embedding-Norm[0][0]
+                                                                 Embedding-Norm[0][0]
+                                                                 Embedding-Norm[0][0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-0-MultiHeadSelfAtte (None, None, 768)    0           Transformer-0-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-0-MultiHeadSelfAtte (None, None, 768)    0           Embedding-Norm[0][0]
+                                                                 Transformer-0-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-0-MultiHeadSelfAtte (None, None, 768)    0           Transformer-0-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-0-FeedForward (Feed (None, None, 768)    4718592     Transformer-0-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-0-FeedForward-Dropo (None, None, 768)    0           Transformer-0-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-0-FeedForward-Add ( (None, None, 768)    0           Transformer-0-MultiHeadSelfAttent
+                                                                 Transformer-0-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-0-FeedForward-Norm  (None, None, 768)    0           Transformer-0-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-1-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-0-FeedForward-Norm[0]
+                                                                 Transformer-0-FeedForward-Norm[0]
+                                                                 Transformer-0-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-1-MultiHeadSelfAtte (None, None, 768)    0           Transformer-1-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-1-MultiHeadSelfAtte (None, None, 768)    0           Transformer-0-FeedForward-Norm[0]
+                                                                 Transformer-1-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-1-MultiHeadSelfAtte (None, None, 768)    0           Transformer-1-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-1-FeedForward (Feed (None, None, 768)    4718592     Transformer-1-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-1-FeedForward-Dropo (None, None, 768)    0           Transformer-1-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-1-FeedForward-Add ( (None, None, 768)    0           Transformer-1-MultiHeadSelfAttent
+                                                                 Transformer-1-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-1-FeedForward-Norm  (None, None, 768)    0           Transformer-1-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-2-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-1-FeedForward-Norm[0]
+                                                                 Transformer-1-FeedForward-Norm[0]
+                                                                 Transformer-1-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-2-MultiHeadSelfAtte (None, None, 768)    0           Transformer-2-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-2-MultiHeadSelfAtte (None, None, 768)    0           Transformer-1-FeedForward-Norm[0]
+                                                                 Transformer-2-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-2-MultiHeadSelfAtte (None, None, 768)    0           Transformer-2-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-2-FeedForward (Feed (None, None, 768)    4718592     Transformer-2-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-2-FeedForward-Dropo (None, None, 768)    0           Transformer-2-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-2-FeedForward-Add ( (None, None, 768)    0           Transformer-2-MultiHeadSelfAttent
+                                                                 Transformer-2-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-2-FeedForward-Norm  (None, None, 768)    0           Transformer-2-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-3-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-2-FeedForward-Norm[0]
+                                                                 Transformer-2-FeedForward-Norm[0]
+                                                                 Transformer-2-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-3-MultiHeadSelfAtte (None, None, 768)    0           Transformer-3-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-3-MultiHeadSelfAtte (None, None, 768)    0           Transformer-2-FeedForward-Norm[0]
+                                                                 Transformer-3-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-3-MultiHeadSelfAtte (None, None, 768)    0           Transformer-3-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-3-FeedForward (Feed (None, None, 768)    4718592     Transformer-3-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-3-FeedForward-Dropo (None, None, 768)    0           Transformer-3-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-3-FeedForward-Add ( (None, None, 768)    0           Transformer-3-MultiHeadSelfAttent
+                                                                 Transformer-3-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-3-FeedForward-Norm  (None, None, 768)    0           Transformer-3-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-4-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-3-FeedForward-Norm[0]
+                                                                 Transformer-3-FeedForward-Norm[0]
+                                                                 Transformer-3-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-4-MultiHeadSelfAtte (None, None, 768)    0           Transformer-4-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-4-MultiHeadSelfAtte (None, None, 768)    0           Transformer-3-FeedForward-Norm[0]
+                                                                 Transformer-4-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-4-MultiHeadSelfAtte (None, None, 768)    0           Transformer-4-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-4-FeedForward (Feed (None, None, 768)    4718592     Transformer-4-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-4-FeedForward-Dropo (None, None, 768)    0           Transformer-4-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-4-FeedForward-Add ( (None, None, 768)    0           Transformer-4-MultiHeadSelfAttent
+                                                                 Transformer-4-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-4-FeedForward-Norm  (None, None, 768)    0           Transformer-4-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-5-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-4-FeedForward-Norm[0]
+                                                                 Transformer-4-FeedForward-Norm[0]
+                                                                 Transformer-4-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-5-MultiHeadSelfAtte (None, None, 768)    0           Transformer-5-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-5-MultiHeadSelfAtte (None, None, 768)    0           Transformer-4-FeedForward-Norm[0]
+                                                                 Transformer-5-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-5-MultiHeadSelfAtte (None, None, 768)    0           Transformer-5-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-5-FeedForward (Feed (None, None, 768)    4718592     Transformer-5-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-5-FeedForward-Dropo (None, None, 768)    0           Transformer-5-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-5-FeedForward-Add ( (None, None, 768)    0           Transformer-5-MultiHeadSelfAttent
+                                                                 Transformer-5-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-5-FeedForward-Norm  (None, None, 768)    0           Transformer-5-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-6-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-5-FeedForward-Norm[0]
+                                                                 Transformer-5-FeedForward-Norm[0]
+                                                                 Transformer-5-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-6-MultiHeadSelfAtte (None, None, 768)    0           Transformer-6-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-6-MultiHeadSelfAtte (None, None, 768)    0           Transformer-5-FeedForward-Norm[0]
+                                                                 Transformer-6-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-6-MultiHeadSelfAtte (None, None, 768)    0           Transformer-6-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-6-FeedForward (Feed (None, None, 768)    4718592     Transformer-6-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-6-FeedForward-Dropo (None, None, 768)    0           Transformer-6-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-6-FeedForward-Add ( (None, None, 768)    0           Transformer-6-MultiHeadSelfAttent
+                                                                 Transformer-6-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-6-FeedForward-Norm  (None, None, 768)    0           Transformer-6-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-7-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-6-FeedForward-Norm[0]
+                                                                 Transformer-6-FeedForward-Norm[0]
+                                                                 Transformer-6-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-7-MultiHeadSelfAtte (None, None, 768)    0           Transformer-7-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-7-MultiHeadSelfAtte (None, None, 768)    0           Transformer-6-FeedForward-Norm[0]
+                                                                 Transformer-7-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-7-MultiHeadSelfAtte (None, None, 768)    0           Transformer-7-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-7-FeedForward (Feed (None, None, 768)    4718592     Transformer-7-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-7-FeedForward-Dropo (None, None, 768)    0           Transformer-7-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-7-FeedForward-Add ( (None, None, 768)    0           Transformer-7-MultiHeadSelfAttent
+                                                                 Transformer-7-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-7-FeedForward-Norm  (None, None, 768)    0           Transformer-7-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-8-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-7-FeedForward-Norm[0]
+                                                                 Transformer-7-FeedForward-Norm[0]
+                                                                 Transformer-7-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-8-MultiHeadSelfAtte (None, None, 768)    0           Transformer-8-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-8-MultiHeadSelfAtte (None, None, 768)    0           Transformer-7-FeedForward-Norm[0]
+                                                                 Transformer-8-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-8-MultiHeadSelfAtte (None, None, 768)    0           Transformer-8-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-8-FeedForward (Feed (None, None, 768)    4718592     Transformer-8-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-8-FeedForward-Dropo (None, None, 768)    0           Transformer-8-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-8-FeedForward-Add ( (None, None, 768)    0           Transformer-8-MultiHeadSelfAttent
+                                                                 Transformer-8-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-8-FeedForward-Norm  (None, None, 768)    0           Transformer-8-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-9-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-8-FeedForward-Norm[0]
+                                                                 Transformer-8-FeedForward-Norm[0]
+                                                                 Transformer-8-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-9-MultiHeadSelfAtte (None, None, 768)    0           Transformer-9-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-9-MultiHeadSelfAtte (None, None, 768)    0           Transformer-8-FeedForward-Norm[0]
+                                                                 Transformer-9-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-9-MultiHeadSelfAtte (None, None, 768)    0           Transformer-9-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-9-FeedForward (Feed (None, None, 768)    4718592     Transformer-9-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-9-FeedForward-Dropo (None, None, 768)    0           Transformer-9-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-9-FeedForward-Add ( (None, None, 768)    0           Transformer-9-MultiHeadSelfAttent
+                                                                 Transformer-9-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-9-FeedForward-Norm  (None, None, 768)    0           Transformer-9-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-10-MultiHeadSelfAtt (None, None, 768)    2359296     Transformer-9-FeedForward-Norm[0]
+                                                                 Transformer-9-FeedForward-Norm[0]
+                                                                 Transformer-9-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-10-MultiHeadSelfAtt (None, None, 768)    0           Transformer-10-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-10-MultiHeadSelfAtt (None, None, 768)    0           Transformer-9-FeedForward-Norm[0]
+                                                                 Transformer-10-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-10-MultiHeadSelfAtt (None, None, 768)    0           Transformer-10-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-10-FeedForward (Fee (None, None, 768)    4718592     Transformer-10-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-10-FeedForward-Drop (None, None, 768)    0           Transformer-10-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-10-FeedForward-Add  (None, None, 768)    0           Transformer-10-MultiHeadSelfAtten
+                                                                 Transformer-10-FeedForward-Dropou
+__________________________________________________________________________________________________
+Transformer-10-FeedForward-Norm (None, None, 768)    0           Transformer-10-FeedForward-Add[0]
+__________________________________________________________________________________________________
+Transformer-11-MultiHeadSelfAtt (None, None, 768)    2359296     Transformer-10-FeedForward-Norm[0
+                                                                 Transformer-10-FeedForward-Norm[0
+                                                                 Transformer-10-FeedForward-Norm[0
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-11-MultiHeadSelfAtt (None, None, 768)    0           Transformer-11-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-11-MultiHeadSelfAtt (None, None, 768)    0           Transformer-10-FeedForward-Norm[0
+                                                                 Transformer-11-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-11-MultiHeadSelfAtt (None, None, 768)    0           Transformer-11-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-11-FeedForward (Fee (None, None, 768)    4718592     Transformer-11-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-11-FeedForward-Drop (None, None, 768)    0           Transformer-11-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-11-FeedForward-Add  (None, None, 768)    0           Transformer-11-MultiHeadSelfAtten
+                                                                 Transformer-11-FeedForward-Dropou
+__________________________________________________________________________________________________
+Transformer-11-FeedForward-Norm (None, None, 768)    0           Transformer-11-FeedForward-Add[0]
+__________________________________________________________________________________________________
+bidirectional_1 (Bidirectional) (None, None, 256)    918528      Transformer-11-FeedForward-Norm[0
+__________________________________________________________________________________________________
+concatenate_1 (Concatenate)     (None, None, 1024)   0           bidirectional_1[0][0]
+                                                                 Transformer-11-FeedForward-Norm[0
+__________________________________________________________________________________________________
+time_distributed_1 (TimeDistrib (None, None, 512)    524800      concatenate_1[0][0]
+__________________________________________________________________________________________________
+time_distributed_2 (TimeDistrib (None, None, 512)    0           time_distributed_1[0][0]
+__________________________________________________________________________________________________
+global_pointer_1 (GlobalPointer (None, 9, None, None 590976      time_distributed_2[0][0]
+==================================================================================================
+Total params: 96,186,496
+Trainable params: 96,186,496
+Non-trainable params: 0
+__________________________________________________________________________________________________
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+		Train start!
+Epoch 1/999
+235/235 [==============================] - 848s 4s/step - loss: 1846950.7324 - global_pointer_f1_score: 0.1109
+valid:  f1: 0.47296, precision: 0.58339, recall: 0.39768, best f1: 0.47296
+Epoch 2/999
+235/235 [==============================] - 792s 3s/step - loss: 1846948.5725 - global_pointer_f1_score: 0.4004
+valid:  f1: 0.60525, precision: 0.68479, recall: 0.54227, best f1: 0.60525
+Epoch 3/999
+235/235 [==============================] - 791s 3s/step - loss: 1846948.4183 - global_pointer_f1_score: 0.4642
+valid:  f1: 0.64178, precision: 0.68543, recall: 0.60335, best f1: 0.64178
+Epoch 4/999
+235/235 [==============================] - 798s 3s/step - loss: 1846948.3500 - global_pointer_f1_score: 0.5006
+valid:  f1: 0.65132, precision: 0.70000, recall: 0.60897, best f1: 0.65132
+Epoch 5/999
+235/235 [==============================] - 798s 3s/step - loss: 1846948.3117 - global_pointer_f1_score: 0.5241
+valid:  f1: 0.66116, precision: 0.69647, recall: 0.62926, best f1: 0.66116
+Epoch 6/999
+235/235 [==============================] - 803s 3s/step - loss: 1846948.2816 - global_pointer_f1_score: 0.5403
+valid:  f1: 0.66235, precision: 0.70442, recall: 0.62502, best f1: 0.66235
+Epoch 7/999
+235/235 [==============================] - 835s 4s/step - loss: 1846948.2575 - global_pointer_f1_score: 0.5579
+valid:  f1: 0.66947, precision: 0.68467, recall: 0.65493, best f1: 0.66947
+Epoch 8/999
+235/235 [==============================] - 806s 3s/step - loss: 1846948.2425 - global_pointer_f1_score: 0.5678
+valid:  f1: 0.67263, precision: 0.69413, recall: 0.65241, best f1: 0.67263
+Epoch 9/999
+235/235 [==============================] - 808s 3s/step - loss: 1846948.2286 - global_pointer_f1_score: 0.5731
+valid:  f1: 0.67510, precision: 0.70326, recall: 0.64911, best f1: 0.67510
+Epoch 10/999
+235/235 [==============================] - 805s 3s/step - loss: 1846948.2161 - global_pointer_f1_score: 0.5864
+Early stop count 1/5
+valid:  f1: 0.67471, precision: 0.68589, recall: 0.66389, best f1: 0.67510
+Epoch 11/999
+235/235 [==============================] - 799s 3s/step - loss: 1846948.2068 - global_pointer_f1_score: 0.5942
+valid:  f1: 0.67846, precision: 0.69777, recall: 0.66020, best f1: 0.67846
+Epoch 12/999
+235/235 [==============================] - 804s 3s/step - loss: 1846948.1934 - global_pointer_f1_score: 0.5992
+valid:  f1: 0.67861, precision: 0.69957, recall: 0.65887, best f1: 0.67861
+Epoch 13/999
+235/235 [==============================] - 783s 3s/step - loss: 1846948.1850 - global_pointer_f1_score: 0.6052
+Early stop count 1/5
+valid:  f1: 0.67814, precision: 0.69323, recall: 0.66369, best f1: 0.67861
+Epoch 14/999
+235/235 [==============================] - 785s 3s/step - loss: 1846948.1766 - global_pointer_f1_score: 0.6135
+Early stop count 2/5
+valid:  f1: 0.67632, precision: 0.69949, recall: 0.65463, best f1: 0.67861
+Epoch 15/999
+235/235 [==============================] - 788s 3s/step - loss: 1846948.1692 - global_pointer_f1_score: 0.6196
+valid:  f1: 0.68172, precision: 0.69845, recall: 0.66576, best f1: 0.68172
+Epoch 16/999
+235/235 [==============================] - 804s 3s/step - loss: 1846948.1641 - global_pointer_f1_score: 0.6208
+Early stop count 1/5
+valid:  f1: 0.68123, precision: 0.69533, recall: 0.66768, best f1: 0.68172
+Epoch 17/999
+235/235 [==============================] - 808s 3s/step - loss: 1846948.1551 - global_pointer_f1_score: 0.6271
+valid:  f1: 0.68244, precision: 0.68858, recall: 0.67640, best f1: 0.68244
+Epoch 18/999
+235/235 [==============================] - 799s 3s/step - loss: 1846948.1483 - global_pointer_f1_score: 0.6328
+valid:  f1: 0.68499, precision: 0.69056, recall: 0.67951, best f1: 0.68499
+Epoch 19/999
+235/235 [==============================] - 807s 3s/step - loss: 1846948.1427 - global_pointer_f1_score: 0.6355
+Early stop count 1/5
+valid:  f1: 0.68432, precision: 0.69487, recall: 0.67409, best f1: 0.68499
+Epoch 20/999
+235/235 [==============================] - 802s 3s/step - loss: 1846948.1380 - global_pointer_f1_score: 0.6416
+valid:  f1: 0.68531, precision: 0.68984, recall: 0.68084, best f1: 0.68531
+Epoch 21/999
+235/235 [==============================] - 811s 3s/step - loss: 1846948.1295 - global_pointer_f1_score: 0.6426
+Early stop count 1/5
+valid:  f1: 0.68421, precision: 0.70284, recall: 0.66655, best f1: 0.68531
+Epoch 22/999
+235/235 [==============================] - 809s 3s/step - loss: 1846948.1252 - global_pointer_f1_score: 0.6453
+Early stop count 2/5
+valid:  f1: 0.68311, precision: 0.70275, recall: 0.66453, best f1: 0.68531
+Epoch 23/999
+235/235 [==============================] - 798s 3s/step - loss: 1846948.1195 - global_pointer_f1_score: 0.6515
+Early stop count 3/5
+valid:  f1: 0.68450, precision: 0.68851, recall: 0.68054, best f1: 0.68531
+Epoch 24/999
+235/235 [==============================] - 809s 3s/step - loss: 1846948.1143 - global_pointer_f1_score: 0.6521
+valid:  f1: 0.68550, precision: 0.69869, recall: 0.67281, best f1: 0.68550
+Epoch 25/999
+235/235 [==============================] - 797s 3s/step - loss: 1846948.1078 - global_pointer_f1_score: 0.6571
+valid:  f1: 0.68627, precision: 0.69605, recall: 0.67675, best f1: 0.68627
+Epoch 26/999
+235/235 [==============================] - 810s 3s/step - loss: 1846948.1032 - global_pointer_f1_score: 0.6618
+valid:  f1: 0.68718, precision: 0.68420, recall: 0.69020, best f1: 0.68718
+Epoch 27/999
+235/235 [==============================] - 798s 3s/step - loss: 1846948.0990 - global_pointer_f1_score: 0.6633
+Early stop count 1/5
+valid:  f1: 0.68538, precision: 0.69192, recall: 0.67897, best f1: 0.68718
+Epoch 28/999
+235/235 [==============================] - 815s 3s/step - loss: 1846948.0951 - global_pointer_f1_score: 0.6696
+Early stop count 2/5
+valid:  f1: 0.68438, precision: 0.69939, recall: 0.67000, best f1: 0.68718
+Epoch 29/999
+235/235 [==============================] - 799s 3s/step - loss: 1846948.0917 - global_pointer_f1_score: 0.6691
+Early stop count 3/5
+valid:  f1: 0.68699, precision: 0.68792, recall: 0.68606, best f1: 0.68718
+Epoch 30/999
+235/235 [==============================] - 808s 3s/step - loss: 1846948.0871 - global_pointer_f1_score: 0.6722
+Early stop count 4/5
+valid:  f1: 0.68576, precision: 0.68664, recall: 0.68488, best f1: 0.68718
+Epoch 31/999
+235/235 [==============================] - 807s 3s/step - loss: 1846948.0819 - global_pointer_f1_score: 0.6753
+valid:  f1: 0.68809, precision: 0.69421, recall: 0.68207, best f1: 0.68809
+Epoch 32/999
+235/235 [==============================] - 814s 3s/step - loss: 1846948.0789 - global_pointer_f1_score: 0.6796
+Early stop count 1/5
+valid:  f1: 0.68616, precision: 0.69223, recall: 0.68020, best f1: 0.68809
+Epoch 33/999
+235/235 [==============================] - 805s 3s/step - loss: 1846948.0726 - global_pointer_f1_score: 0.6819
+Early stop count 2/5
+valid:  f1: 0.68748, precision: 0.69395, recall: 0.68113, best f1: 0.68809
+Epoch 34/999
+235/235 [==============================] - 813s 3s/step - loss: 1846948.0713 - global_pointer_f1_score: 0.6844
+Early stop count 3/5
+valid:  f1: 0.68703, precision: 0.69211, recall: 0.68202, best f1: 0.68809
+Epoch 35/999
+235/235 [==============================] - 802s 3s/step - loss: 1846948.0641 - global_pointer_f1_score: 0.6879
+Early stop count 4/5
+valid:  f1: 0.68760, precision: 0.69353, recall: 0.68177, best f1: 0.68809
+Epoch 36/999
+235/235 [==============================] - 809s 3s/step - loss: 1846948.0604 - global_pointer_f1_score: 0.6921
+valid:  f1: 0.68856, precision: 0.69183, recall: 0.68532, best f1: 0.68856
+Epoch 37/999
+235/235 [==============================] - 789s 3s/step - loss: 1846948.0589 - global_pointer_f1_score: 0.6929
+Early stop count 1/5
+valid:  f1: 0.68653, precision: 0.70168, recall: 0.67202, best f1: 0.68856
+Epoch 38/999
+235/235 [==============================] - 818s 3s/step - loss: 1846948.0549 - global_pointer_f1_score: 0.6925
+valid:  f1: 0.68911, precision: 0.68248, recall: 0.69586, best f1: 0.68911
+Epoch 39/999
+235/235 [==============================] - 800s 3s/step - loss: 1846948.0513 - global_pointer_f1_score: 0.6976
+valid:  f1: 0.68945, precision: 0.68930, recall: 0.68961, best f1: 0.68945
+Epoch 40/999
+235/235 [==============================] - 798s 3s/step - loss: 1846948.0481 - global_pointer_f1_score: 0.7001
+valid:  f1: 0.68984, precision: 0.69887, recall: 0.68103, best f1: 0.68984
+Epoch 41/999
+235/235 [==============================] - 810s 3s/step - loss: 1846948.0426 - global_pointer_f1_score: 0.7032
+Early stop count 1/5
+valid:  f1: 0.68904, precision: 0.69538, recall: 0.68281, best f1: 0.68984
+Epoch 42/999
+235/235 [==============================] - 801s 3s/step - loss: 1846948.0387 - global_pointer_f1_score: 0.7039
+Early stop count 2/5
+valid:  f1: 0.68777, precision: 0.69014, recall: 0.68542, best f1: 0.68984
+Epoch 43/999
+235/235 [==============================] - 795s 3s/step - loss: 1846948.0358 - global_pointer_f1_score: 0.7059
+Early stop count 3/5
+valid:  f1: 0.68875, precision: 0.69027, recall: 0.68724, best f1: 0.68984
+Epoch 44/999
+235/235 [==============================] - 809s 3s/step - loss: 1846948.0314 - global_pointer_f1_score: 0.7109
+valid:  f1: 0.68985, precision: 0.68779, recall: 0.69192, best f1: 0.68985
+Epoch 45/999
+235/235 [==============================] - 800s 3s/step - loss: 1846948.0283 - global_pointer_f1_score: 0.7120
+Early stop count 1/5
+valid:  f1: 0.68803, precision: 0.68587, recall: 0.69020, best f1: 0.68985
+Epoch 46/999
+235/235 [==============================] - 800s 3s/step - loss: 1846948.0257 - global_pointer_f1_score: 0.7131
+Early stop count 2/5
+valid:  f1: 0.68968, precision: 0.69139, recall: 0.68798, best f1: 0.68985
+Epoch 47/999
+235/235 [==============================] - 789s 3s/step - loss: 1846948.0231 - global_pointer_f1_score: 0.7160
+Early stop count 3/5
+valid:  f1: 0.68962, precision: 0.68141, recall: 0.69803, best f1: 0.68985
+Epoch 48/999
+235/235 [==============================] - 802s 3s/step - loss: 1846948.0180 - global_pointer_f1_score: 0.7179
+valid:  f1: 0.69033, precision: 0.68384, recall: 0.69695, best f1: 0.69033
+Epoch 49/999
+235/235 [==============================] - 799s 3s/step - loss: 1846948.0157 - global_pointer_f1_score: 0.7204
+Early stop count 1/5
+valid:  f1: 0.69006, precision: 0.68651, recall: 0.69365, best f1: 0.69033
+Epoch 50/999
+235/235 [==============================] - 802s 3s/step - loss: 1846948.0111 - global_pointer_f1_score: 0.7245
+Early stop count 2/5
+valid:  f1: 0.68966, precision: 0.68829, recall: 0.69103, best f1: 0.69033
+Epoch 51/999
+235/235 [==============================] - 793s 3s/step - loss: 1846948.0089 - global_pointer_f1_score: 0.7252
+Early stop count 3/5
+valid:  f1: 0.68762, precision: 0.69748, recall: 0.67803, best f1: 0.69033
+Epoch 52/999
+235/235 [==============================] - 801s 3s/step - loss: 1846948.0047 - global_pointer_f1_score: 0.7259
+Early stop count 4/5
+valid:  f1: 0.68765, precision: 0.68975, recall: 0.68557, best f1: 0.69033
+Epoch 53/999
+235/235 [==============================] - 441s 2s/step - loss: 1846947.9834 - global_pointer_f1_score: 0.7431
+valid:  f1: 0.69102, precision: 0.67990, recall: 0.70251, best f1: 0.69102
+Epoch 54/999
+235/235 [==============================] - 440s 2s/step - loss: 1846947.9797 - global_pointer_f1_score: 0.7454
+Early stop count 1/5
+valid:  f1: 0.69061, precision: 0.68100, recall: 0.70049, best f1: 0.69102
+Epoch 55/999
+235/235 [==============================] - 425s 2s/step - loss: 1846947.9784 - global_pointer_f1_score: 0.7464
+Early stop count 2/5
+valid:  f1: 0.69086, precision: 0.68112, recall: 0.70089, best f1: 0.69102
+Epoch 56/999
+235/235 [==============================] - 416s 2s/step - loss: 1846947.9760 - global_pointer_f1_score: 0.7478
+valid:  f1: 0.69117, precision: 0.68088, recall: 0.70177, best f1: 0.69117
+Epoch 57/999
+235/235 [==============================] - 430s 2s/step - loss: 1846947.9758 - global_pointer_f1_score: 0.7481
+Early stop count 1/5
+valid:  f1: 0.69079, precision: 0.68028, recall: 0.70163, best f1: 0.69117
+Epoch 58/999
+235/235 [==============================] - 431s 2s/step - loss: 1846947.9733 - global_pointer_f1_score: 0.7508
+valid:  f1: 0.69121, precision: 0.68083, recall: 0.70192, best f1: 0.69121
+Epoch 59/999
+235/235 [==============================] - 421s 2s/step - loss: 1846947.9718 - global_pointer_f1_score: 0.7515
+Early stop count 1/5
+valid:  f1: 0.69094, precision: 0.68026, recall: 0.70197, best f1: 0.69121
+Epoch 60/999
+235/235 [==============================] - 424s 2s/step - loss: 1846947.9706 - global_pointer_f1_score: 0.7521
+Early stop count 2/5
+valid:  f1: 0.69059, precision: 0.67967, recall: 0.70187, best f1: 0.69121
+Epoch 61/999
+235/235 [==============================] - 419s 2s/step - loss: 1846947.9697 - global_pointer_f1_score: 0.7522
+Early stop count 3/5
+valid:  f1: 0.69068, precision: 0.67947, recall: 0.70227, best f1: 0.69121
+Epoch 62/999
+235/235 [==============================] - 423s 2s/step - loss: 1846947.9673 - global_pointer_f1_score: 0.7528
+Early stop count 4/5
+valid:  f1: 0.69084, precision: 0.67945, recall: 0.70261, best f1: 0.69121
+Epoch 63/999
+235/235 [==============================] - 423s 2s/step - loss: 1846947.9664 - global_pointer_f1_score: 0.7559
+Early stop count 5/5
+Epoch 00009: early stopping THR
+valid:  f1: 0.69046, precision: 0.67864, recall: 0.70271, best f1: 0.69121
+	Train end!
+findfont: Font family ['sans-serif'] not found. Falling back to DejaVu Sans.
+进程已结束,退出代码0
+
+	Train end!
+findfont: Font family ['sans-serif'] not found. Falling back to DejaVu Sans.
+
+weight path:/home/bureaux/Projects/globalpointer_ner/weights/chip_roformer_v2_AdaFactorEMA_base.h5
+evaluate dataset path:./data/chip.validate
+Evaluating General F1: 100%|████████████████████████████████████| 5000/5000 [06:29<00:00, 12.84it/s]
+General:  f1: 0.69033, precision: 0.68384, recall: 0.69695
+Evaluating F1 of each Categories: 100%|███████████████████████| 5000/5000 [1:08:23<00:00,  1.22it/s]
+       TP  TP+FP  TP+FN  precision  recall      f1
+bod  4322   6528   5883     0.6621  0.7347  0.6965
+dep    69    102    110     0.6765  0.6273  0.6509
+dis  4013   5309   4935     0.7559  0.8132  0.7835
+dru  1261   1593   1440     0.7916  0.8757  0.8315
+equ   143    241    238     0.5934  0.6008  0.5971
+ite   371    709    923     0.5233  0.4020  0.4547
+mic   482    621    584     0.7762  0.8253  0.8000
+pro  1470   2341   2057     0.6279  0.7146  0.6685
+sym  2017   3245   4130     0.6216  0.4884  0.5470
+
+weight path:/home/bureaux/Projects/globalpointer_ner/weights/chip_roformer_v2_AdaFactorEMA_FINAL.h5
+evaluate dataset path:./data/chip.validate
+Evaluating General F1: 100%|████████████████████████████████████| 5000/5000 [07:17<00:00, 11.42it/s]
+General:  f1: 0.69121, precision: 0.68083, recall: 0.70192
+Evaluating F1 of each Categories: 100%|███████████████████████| 5000/5000 [1:05:10<00:00,  1.28it/s]
+       TP  TP+FP  TP+FN  precision  recall      f1
+bod  4365   6614   5883     0.6600  0.7420  0.6986
+dep    68     99    110     0.6869  0.6182  0.6507
+dis  4055   5398   4935     0.7512  0.8217  0.7849
+dru  1256   1583   1440     0.7934  0.8722  0.8310
+equ   146    248    238     0.5887  0.6134  0.6008
+ite   396    785    923     0.5045  0.4290  0.4637
+mic   483    626    584     0.7716  0.8271  0.7983
+pro  1475   2365   2057     0.6237  0.7171  0.6671
+sym  2005   3211   4130     0.6244  0.4855  0.5462
